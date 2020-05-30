@@ -6,7 +6,7 @@
 #    By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/29 18:32:11 by bbellavi          #+#    #+#              #
-#    Updated: 2020/05/30 21:20:33 by bbellavi         ###   ########.fr        #
+#    Updated: 2020/05/30 23:57:48 by bbellavi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ $(NAME): $(SRCS)
 	@$(CC) $(CFLAGS) -o $(NAME) $(SRCS) $(MLX_NAME) -I$(HEADERS) -I$(MLX_HEADERS) -framework OpenGl -framework AppKit 
 
 test: re
-	@./$(NAME)
+	@./$(NAME) assets/hitler.xpm img.bmp
 	@file img.bmp
 	
 clean:

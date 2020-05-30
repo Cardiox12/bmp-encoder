@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 03:22:32 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/05/30 17:41:15 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/05/30 23:53:32 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ typedef struct	s_infos
 	t_image	image;
 }				t_infos;
 
+#pragma pack(push, 1)
+
 typedef struct	s_bitmap
 {
 	u_int16_t	bf_type;
@@ -66,8 +68,9 @@ typedef struct	s_bitmap
 	uint32_t	bi_clr_important;
 }				t_bitmap;
 
-# define R_MASK 0xff0000
-# define G_MASK 0x00ff00
-# define B_MASK 0x0000ff
+#pragma pack(pop)
+
+# define BMP_EXT ".bmp"
+# define XPM_EXT ".xpm"
 
 #endif
