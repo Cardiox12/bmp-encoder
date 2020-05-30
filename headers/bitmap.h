@@ -6,7 +6,7 @@
 /*   By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/05/29 03:22:32 by bbellavi          #+#    #+#             */
-/*   Updated: 2020/05/30 08:36:20 by bbellavi         ###   ########.fr       */
+/*   Updated: 2020/05/30 17:41:15 by bbellavi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,9 +47,10 @@ typedef struct	s_infos
 
 typedef struct	s_bitmap
 {
-	char		bf_type[2];
+	u_int16_t	bf_type;
 	uint32_t	bf_size;
-	uint32_t	bf_reserved;
+	u_int16_t	bf_reserved1;
+	u_int16_t	bf_reserved2;
 	uint32_t	bf_offset_bits;
 
 	uint32_t	bi_size;

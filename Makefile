@@ -6,7 +6,7 @@
 #    By: bbellavi <bbellavi@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/29 18:32:11 by bbellavi          #+#    #+#              #
-#    Updated: 2020/05/30 05:29:07 by bbellavi         ###   ########.fr        #
+#    Updated: 2020/05/30 21:20:33 by bbellavi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ $(NAME): $(SRCS)
 
 test: re
 	@./$(NAME)
+	@file img.bmp
 	
 clean:
 	@echo "Cleaning"
